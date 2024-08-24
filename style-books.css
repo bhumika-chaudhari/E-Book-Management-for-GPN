@@ -1,0 +1,184 @@
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar .nav-links li {
+    float: left;
+}
+
+.navbar .nav-links li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #575757;
+}
+
+.content {
+    padding: 100px 20px; /* Adjust padding to fit your content */
+}
+
+body{
+    background-color: rgb(3, 21, 61);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-container{
+    background: #fff;
+    height: 30px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 80px;
+    cursor: pointer;
+    width: 50%;
+    transition: 0.8s;
+   
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+.search-container:hover{
+    box-shadow: 5px 5px 15px 3px rgba(235, 231, 192, 0.927);
+}
+.search-container:hover > .search-input{
+    width: 400px;
+   
+}
+
+.search-container .search-input{
+    background: transparent;
+    border: none;
+    outline:none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 22px;
+    transition: 0.8s;
+
+}
+
+.search-container .search-btn .fas{
+    color: #957d03;
+    font-size: 24px; /* Increase the font size */
+    padding: 10px; /* Add padding around the icon */
+}
+@keyframes hoverShake {
+  0% {transform: skew(0deg,0deg);}
+  25% {transform: skew(0deg, 0deg);}
+  75% {transform: skew(0deg, 0deg);}
+  100% {transform: skew(0deg,0deg);}
+}
+
+.search-container:hover{
+  animation: hoverShake 0.15s linear 3;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    height: 400px; /* Fixed height for consistency */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    border-style:solid;
+    border-color: #010101;
+    box-shadow:5px 5px 30px 13px rgb(163, 163, 163);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1; /* Ensure that the content area takes up remaining space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly */
+    text-align: center;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.card-content p {
+    color: #010101;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    align-self: center; /* Center the button horizontally */
+}
+
+.card-button:hover {
+    background-color: #575757;
+}
+.card-container-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 40px auto;
+    
+    max-width: 700px;
+    width: 100%; /* Same max-width as the top container */
+}
+

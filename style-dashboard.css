@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    background-color: #ffffff;
+}
+
+.toggle-button {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color:transparent;
+    color: rgb(187, 142, 6);
+    border: none;
+    font-size: 50px;
+    padding: 5px 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure the button is on top */
+}
+
+
+.sidebar {
+    width: 250px;
+    /*background-image: linear-gradient(to left,#d59cca, #af6aa1, #d59cca);*/
+    background-color: rgb(3, 84, 119);
+    color: #ffffff;
+        height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%); /* Hide sidebar initially */
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Show sidebar when open */
+}
+
+.sidebar h2 {
+    margin-top: 25%;
+    color: #ffffff;
+
+    font-size: 1.8rem;
+}
+
+.sidebar ul {
+    list-style:square;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.sidebar ul li a:hover {
+    color: #7775cd;
+}
+
+.main-content {
+    padding: 20px;
+    transition: margin-left 0.3s ease, width 0.3s ease; /* Smooth transition */
+    margin-left: 0; /* Initial margin for when sidebar is hidden */
+    width: 100%;
+}
+
+.sidebar.open + .main-content {
+    margin-left: 280px; /* Adjust margin to make space for the sidebar */
+    width: calc(100% - 280px); /* Reduce width to fit the sidebar */
+}
+
+/* Styling for the statistics section */
+/* Styling for the statistics section */
+#statistics-section {
+    margin-top: 20px;
+}
+
+/* Ensure the #statistics-cards container is a flex container */
+#statistics-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Add space between cards */
+}
+
+/* More specific selector to ensure styling for cards inside #statistics-cards */
+#statistics-cards .card {
+    background: #2a7281;
+    border: 1.5px solid #000000;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 10px 12px 10px rgba(51, 51, 51, 0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+    width: 300px; /* Set a width to ensure they appear as cards */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+#statistics-cards .card:hover{
+    transform: scale(1.04);
+}
+
+/* Additional styling for the card headers and paragraphs within #statistics-cards */
+#statistics-cards .card h3 {
+    margin-top: 0;
+}
+
+#statistics-cards .card p {
+    margin: 0;
+}
+/* Container for the pie chart */
+.chart-container {
+    width: 100%; /* Adjust this value as needed */
+    max-width: 600px; /* Adjust the maximum width if needed */
+    margin:auto;
+    margin-top: -15%;
+    margin-bottom: -10%;
+
+}
+
+/* Responsive styling for the canvas */
+#pieChart {
+    width: 100% !important; /* Force the width to 100% of the container */
+    height: auto !important; /* Maintain aspect ratio */
+}

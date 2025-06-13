@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <!-- Link to the external CSS file -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style-notes.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-logo">
+            <a href="#"><i class="fas fa-book"></i> GPN</a></div>
+        <button class="navbar-toggle" id="navbar-toggle"><i class="fas fa-bars"></i></button>
+        <ul>
+            <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="notes.html"><i class="fas fa-book-open"></i> Notes</a></li>
+            <li class="dropdown">
+              <a>  <button id="dropdownButton" class="dropbtn">Login
+                  <i class="fa fa-caret-down"></i></a>
+                </button>
+                <div id="dropdownMenu" class="dropdown-content">
+                    <a href="admin_login.php">Admin</a>
+                    <a href="department_login.php">Department </a>
+                </div>
+            </li>
+            
+            <li><a href="About.html"><i class="fas fa-info-circle"></i> About</a></li>
+
+          
+        </ul>
+    </div>
+    <!-- Search Box Section -->
+    <div class="search-container">
+        <input type="text" name="search" placeholder="Search The Department..." class="search-input">
+        <a href="#" class="search-btn">
+                <i class="fas fa-search"></i>      
+        </a>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="pictures/cm.png" alt="computer" class="card-image">
+            <div class="card-content">
+                <h3>Computer Technology</h3>
+                <p>Engineering the future through innovative computing.</p>
+                <a href="departments/cm.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/entc.png" alt="entc" class="card-image">
+            <div class="card-content">
+                <h3>ENTC</h3>
+                <p>Connecting the world through signal innovation.</p>
+                <a href="departments/entc.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/civil.jpg" alt="Civil" class="card-image">
+            <div class="card-content">
+                <h3>Civil Engineering</h3>
+                <p>Building the future, one structure at a time.</p>
+                <a href="departments/civil.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card-container">
+        <div class="card">
+            <img src="pictures/auto.jpeg" alt="auto-mobile" class="card-image">
+            <div class="card-content">
+                <h3>Automobile Engineering</h3>
+                <p>Driving innovation in automotive design.</p>
+                <a href="departments/auto.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/idd.jpg" alt="entc" class="card-image">
+            <div class="card-content">
+                <h3>Interior Design</h3>
+                <p>Transforming spaces with artistic vision.</p>
+                <a href="departments/idd.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/ddgm.jpg" alt="Book Image" class="card-image">
+            <div class="card-content">
+                <h3>Dress Designing</h3>
+                <p>Crafting style through creative design.</p>
+                <a href="departments/ddgm.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="pictures/mechanical.png" alt="mechanical" class="card-image">
+            <div class="card-content">
+                <h3>Mechanical Engineering</h3>
+                <p>Crafting motion through precision engineering.</p>
+                <a href="departments/mec.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/mechatronic.jpg" alt="entc" class="card-image">
+            <div class="card-content">
+                <h3>Mechatronics</h3>
+                <p>Integrating mechanics and electronics seamlessly.</p>
+                <a href="departments/mect.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/electrical.jpg" alt="Book Image" class="card-image">
+            <div class="card-content">
+                <h3>Electrical Engineering</h3>
+                <p>Powering progress through electrical innovation.</p>
+                <a href="departments/elec.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-container-bottom">
+        <div class="card">
+            <img src="pictures/information.png" alt="information" class="card-image">
+            <div class="card-content">
+                <h3>Information Technology</h3>
+                <p>Empowering progress through digital solutions.</p>
+                <a href="departments/it.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="pictures/plastic.png" alt="polymer" class="card-image">
+            <div class="card-content">
+                <h3>Polymer Engineering</h3>
+                <p>Shaping solutions with polymer innovation.</p>
+                <a href="departments/poly.php" class="card-button">Let's Go.!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Search Functionality -->
+    <script>
+    document.querySelector('.search-input').addEventListener('input', function() {
+        const searchValue = this.value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            const cardTitle = card.querySelector('h3').textContent.toLowerCase();
+
+            if (cardTitle.includes(searchValue)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+    document.getElementById('dropdownButton').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent default action
+    var dropdownMenu = document.getElementById('dropdownMenu');
+    
+    // Toggle the 'show' class
+    dropdownMenu.classList.toggle('show');
+});
+
+// Close the dropdown if clicked outside
+window.addEventListener('click', function(event) {
+    var dropdownMenu = document.getElementById('dropdownMenu');
+    var dropdownButton = document.getElementById('dropdownButton');
+    if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+        if (dropdownMenu.classList.contains('show')) {
+            dropdownMenu.classList.remove('show');
+        }
+    }
+});
+
+    </script>
+</body>
+</html>

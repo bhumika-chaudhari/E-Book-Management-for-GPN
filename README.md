@@ -32,7 +32,6 @@ An online platform designed to help students and faculty efficiently manage and 
 
 ## 📸 Screenshots(Some snaps of website)
 
-> Place all images in the `screenshots/` folder of your repository.
 
 #### 🏠 Home Page  
 ![Home Page](screenshots/homepage.png)

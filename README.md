@@ -30,7 +30,7 @@ An online platform designed to help students and faculty efficiently manage and 
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots(Some snaps of website)
 
 > Place all images in the `screenshots/` folder of your repository.
 
